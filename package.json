@@ -1,0 +1,26 @@
+{
+  "name": "bts-schema",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf dist src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "types": "tsc",
+    "codegen": "graphql-codegen",
+    "build": "npm run clean && npm run codegen && npm run types"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@graphql-codegen/cli": "^5.0.3",
+    "@graphql-codegen/typescript": "^4.1.2",
+    "@graphql-codegen/typescript-graphql-files-modules": "^3.0.0",
+    "@graphql-codegen/typescript-operations": "^4.4.0",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "graphql": "^16.9.0"
+  }
+}
