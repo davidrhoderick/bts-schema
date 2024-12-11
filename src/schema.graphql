@@ -1,9 +1,0 @@
-type User {
-  id: String!
-  name: String!
-  age: Int!
-}
-
-type Query {
-  getUser(id: String!): User!
-}
